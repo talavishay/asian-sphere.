@@ -1,0 +1,9 @@
+base theme = responsive_bartik
+name = asian_theme
+core = 7.x
+
+
+
+stylesheets[all][] = css/index.css
+stylesheets[all][] = css/layout.css
+scripts[] = js/index.js
