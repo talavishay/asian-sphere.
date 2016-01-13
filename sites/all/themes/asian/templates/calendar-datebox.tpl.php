@@ -22,7 +22,28 @@
     $items = reset($items[$date]);
     // Only get the first item.
     $entity = $items[0];
-    $link = l($day, '', array('attributes' => array('data-nid' => $entity->id,'title' => $entity->title),'fragment' => $entity->id, 'external' => TRUE));
+    //~ dpm($entity->calendar_start);
+    //~ $timestamp = ;
+    //dpm();
+    
+    
+ //~ $title = ;
+    //~ dpm($entity->rendered_fields["event_calendar_date"]);
+    //~ dpm($entity->entity->field_place_event['und'][0]['value']);
+    //~ 
+    //~ dpm($entity->title);
+    //~ dpm($entity->rendered_fields["event_calendar_date"]);
+    //~ dpm($entity->entity->field_place_event['und'][0]['value']);
+    //~ 
+    
+    $link = l($day, '', array('attributes' => array(
+		'data-title' => $entity->title,
+		'data-field_place_event' => $entity->entity->field_place_event['und'][0]['value'],
+		'data-href' => '/node/'.$entity->id,
+		'data-nid' => $entity->id,
+		'data-date' => $entity->rendered_fields["event_calendar_date"],
+		'data-day' => format_date( strtotime($entity->calendar_start), $type = 'custom', $format = 'l' ),
+		'title' => $entity->title),'fragment' => $entity->id, 'external' => TRUE));
   }
 
 ?>

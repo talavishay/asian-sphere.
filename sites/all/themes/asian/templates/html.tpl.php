@@ -54,12 +54,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="<?php print $base_path . $path_to_resbartik; ?>/js/selectivizr-min.js"></script>
-  <![endif]-->
-  <!--[if lt IE 9]>
-    <script src="<?php print $base_path . $path_to_resbartik; ?>/js/html5-respond.js"></script>
-  <![endif]-->
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">

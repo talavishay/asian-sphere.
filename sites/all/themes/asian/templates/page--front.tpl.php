@@ -1,11 +1,8 @@
-<?php ?>
-<?php if ($messages): ?>
-    <div id="messages">
-		<div class="section clearfix">
-      <?php print $messages; ?>
-		</div>
-    </div> <!-- #messages -->
-  <?php endif; ?>
+<?php
+	drupal_add_css(drupal_get_path("theme", "asian_theme").'/css/front.css', array('group' => CSS_THEME, 'every_page' => FALSE));
+	drupal_add_js(drupal_get_path("theme", "asian_theme").'/js/front.js');
+?>
+
   <header id="menu" role="banner" >
 		<div class="section clearfix">
 			<?php if ($logo): ?>
@@ -41,34 +38,17 @@
 		</div>		
 	</header> <!-- /.section, /#header -->
 <div id="page-wrapper"><div id="page">
-	
-
-
-	
-		
-  
-
-
   <div id="main-wrapper" class="clearfix"><div id="main" role="main" class="clearfix">
-
-    
-
     <div id="content" class="column"><div class="section">
-      <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if ($title && !$is_front): ?>
-        <h1 class="title" id="page-title">
-          <?php print $title; ?>
-        </h1>
-      <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php if ($tabs): ?>
         <div class="tabs">
           <?php print render($tabs); ?>
         </div>
       <?php endif; ?>
-      <?php print render($page['help']); ?>
+      
       <?php if ($action_links): ?>
         <ul class="action-links">
           <?php print render($action_links); ?>
@@ -78,18 +58,6 @@
       <?php print $feed_icons; ?>
 
     </div></div> <!-- /.section, /#content -->
-
-    <?php if ($page['sidebar_first']): ?>
-      <div id="sidebar-first" class="column sidebar"><div class="section">
-        <?php print render($page['sidebar_first']); ?>
-      </div></div> <!-- /.section, /#sidebar-first -->
-    <?php endif; ?>
-    
-    <?php if ($page['sidebar_second']): ?>
-      <div id="sidebar-second" class="column sidebar"><div class="section">
-        <?php print render($page['sidebar_second']); ?>
-      </div></div> <!-- /.section, /#sidebar-second -->
-    <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
 
@@ -106,3 +74,8 @@
   </div></div> <!-- /.section, /#footer-wrapper -->
 
 </div></div> <!-- /#page, /#page-wrapper -->
+<?php if ($messages): ?>
+    <div id="messages">
+			<?php print $messages; ?>
+	</div> <!-- #messages -->
+<?php endif; ?>
