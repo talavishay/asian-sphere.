@@ -5,3 +5,9 @@ header div.section{
 */
 }
 }
+
+
+.region-footer  .block > .content,
+.region-content .block > .content{
+    margin:0px 2.3%;
+}

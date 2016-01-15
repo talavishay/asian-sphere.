@@ -7,8 +7,8 @@ jQuery(document).ready(function(){
 	var body = jQuery("body");
 	if(body.hasClass("front")){
 		
-	var content = jQuery("#page-wrapper", body),
-		news = jQuery("#block-views-news-block", content),
+	var content = jQuery("#content", body),
+		news = jQuery("#block-views-news-block-1", content),
 		calendar = jQuery('#block-views-calendar-block-1', content),
 		staff = jQuery('#block-views-stuff-view-block', content),
 		blockSlideshow = jQuery('#block-bean-homepage-slide-show', body),
@@ -16,12 +16,6 @@ jQuery(document).ready(function(){
 	
 	_fix_slideshow('.field-slideshow-1');
 	
-		
-	jQuery(".wrap > div", news).each(function(i, val){
-			var val = jQuery(val),
-				split = val.text().split(' ');
-			val.html('<div class="text">'+split[1]+'</div><div class="numbers">'+split[0]+'</div>');
-	});
 	
 	//views-calendar block
 	
@@ -45,7 +39,16 @@ jQuery(document).ready(function(){
 		};
 	});
 	calendar.after('<div class="sep"><div>');
+	gallery.parents(".block").after('<div class="sep"><div>');
 	
+	var _a = jQuery('<a class="moreInfoBar"  href="#"></a>'),
+		ts= 'go to full staff list',
+		cs='go to full courses list',
+		position = {				my : 'bottom',				at : 'top'};
+	//~ jQuery('#block-views-stuff-view-block').after(_a.clone().text(ts).attr("title",ts).tooltip({position:position}) );
+	//~ jQuery('#block-bean-traveling-courses').after(_a.clone().text(cs).attr("title",cs).tooltip({position:position}) );
+	jQuery('#block-views-stuff-view-block').after(_a.clone().text(ts).attr("title",ts) );
+	jQuery('#block-bean-traveling-courses').after(_a.clone().text(cs).attr("title",cs) );
 	
 	jQuery('.views-field-field-profile-image', staff).each(function(i,val){
 		//calc desired height one time ..
@@ -95,8 +98,8 @@ jQuery(document).ready(function(){
 		fnfg_img_w = fnfg_item.first().outerWidth();
 		
 		
-	jQuery(".content", bbtc).first().height(bvof_h - bvof_h2_h-fnfg_h2_h);
-	bbtc.css({"min-height": bvof_h - bvof_h2_h });
+	//~ jQuery(".content", bbtc).first().height(bvof_h - bvof_h2_h-fnfg_h2_h);
+	//~ bbtc.css({"min-height": bvof_h - bvof_h2_h });
 	
 	fnfg_img.each(function(i, val){
 		jQuery(val).height(fnfg_img_w);
@@ -125,10 +128,18 @@ jQuery(document).ready(function(){
 			});		
 		jQuery( bbhss).height(height  + 50);
 	}
-	
-var c = jQuery('<div class="cols_4"/>').append(jQuery('#block-bean-nuri,#block-bean-nuri2,#block-bean-nuri3, #block-bean-nuri4ac'));
-	
+	var nuriBlocks = jQuery('#block-bean-nuri,#block-bean-nuri2,#block-bean-nuri3, #block-bean-nuri4ac');
+	nuriBlocks.each(function(i, val){
+		var m = jQuery('<div class="moreInfo" />');
+		jQuery(".content", val).first().after(m);
+	});
+	var c = jQuery('<div class="cols_4"/>').append(nuriBlocks);
 	jQuery('#block-views-stuff-view-block').before(c);
+	
+	//~ jQuery('.view-testimonials .views-row > img').each(function(i, val){
+		//~ var w = jQuery(val).width();
+		//~ jQuery(val).height(w);
+	//~ });
 });
 
 
@@ -187,7 +198,7 @@ function _fix_slideshow(_class){
 		var body = jQuery('.field-name-field-text-body', slideshow.parents(".content")),
 			menu = jQuery('#main-menu'),
 			width   =	header.width()-30,
-			height	=	body.height() +  menu.height()+ 30;
+			height	=	body.height() +  menu.height();
 			
 		
 		
