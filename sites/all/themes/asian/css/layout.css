@@ -1,13 +1,81 @@
-@media (min-width: 851px){
+.sidebar-first #sidebar-first {
+	width: 13%;
+	margin-right: 1.5%;
+	vertical-align: top;
+}
 header div.section{
 /*
     max-width: 1290px;
 */
 }
+#page-title{
+	margin-top: unset;
 }
+#content{
+		margin-bottom: 1em;
+}
+.sidebar-first #content,
+.sidebar-first #sidebar-first {	
+	display: inline-block;
+}
+nav#main-menu.top{
+		margin-bottom: 2.5em;
+}
+.not-front #content{
+	width : 70%;
 
+}
+.no-sidebars.not-front #content{
+	margin: 1.5em auto;
+}
+footer#bottom .block > .content,
+footer#footer .block > .content,
+.no-sidebars #content .block > .content{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+#block-bean-traveling-courses .content{
+	margin : unset;
+}
+#content .block h2 ,
+.region-content >  h2 {
+	margin-top : 0px;
+	margin-bottom: 0.7em;
+	margin-left:1em;
+	text-transform: capitalize; 
+	
+}
+.region-footer .block h2 {
+	padding-top: 0.7em; margin-top: 0px;
+}
+.not-front .region-footer .block > h2 {
+	width: 14%;
+	float: left;
+}
+	.not-front .region-footer  .webform-submit{
+	position: relative !important;;
+	}
+	.not-front .region-footer  > .block  > .content {
+	width: 100%;
+/* 		float: left;/ */
+		backgrond:red;
+}
+.block#block-bean-traveling-courses h2 {
+	margin: unset;	
+}
+.region-footer-under-menu{
+    padding: .7em 0px;
+}
+.region-footer-under-menu .block:last-of-type{
+    margin-bottom: unset;
+}
+#block-block-2{
+position: absolute;
+right : 0px;
+top : 2em;
+z-index:9;
 
-.region-footer  .block > .content,
-.region-content .block > .content{
-    margin:0px 2.3%;
+}
+.front .region-footer {
+	display: flex;
 }

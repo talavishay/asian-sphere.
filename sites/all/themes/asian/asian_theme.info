@@ -9,7 +9,7 @@ scripts[] = js/index.js
 
 
 
-regions[top_menu_box] = box for social buttons at position fixed top right
+regions[top_menu_box] = fixed top right positioned block
 
 regions[header] = Header
 
@@ -18,3 +18,4 @@ regions[content] = Content
 regions[sidebar_second] = Sidebar second
 
 regions[footer] = Footer
+regions[footer_under_menu] = Footer end ( under menu links  )

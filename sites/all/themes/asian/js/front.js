@@ -40,6 +40,8 @@ jQuery(document).ready(function(){
 	});
 	calendar.after('<div class="sep"><div>');
 	gallery.parents(".block").after('<div class="sep"><div>');
+	gallery.parents(".block").before('<div class="sep"><div>');
+	
 	
 	var _a = jQuery('<a class="moreInfoBar"  href="#"></a>'),
 		ts= 'go to full staff list',
@@ -84,27 +86,32 @@ jQuery(document).ready(function(){
 				
 			}
 	});
+	
 	// equal heigths
 	//~ #block-bean-traveling-courses,
 	//~ #block-views-our-futured-courses-block{
-	var bvof = jQuery('#block-views-our-futured-courses-block'),
-		bbtc = jQuery('#block-bean-traveling-courses'),
-		bvof_h = bvof.outerHeight(),
-		bvof_h2_h = jQuery("h2", bvof).outerHeight(),
-		fnfg_h = 	jQuery('.field-name-field-gallery-teaser', bbtc).outerHeight();
-		fnfg_h2_h = jQuery('h2', bbtc).outerHeight(true),
-		fnfg_item = 	jQuery('.field-name-field-gallery-img .field-item', bbtc),
-		fnfg_img = 	jQuery('.field-name-field-gallery-img img', bbtc),
-		fnfg_img_w = fnfg_item.first().outerWidth();
+		//~ bvof_h2_h = jQuery("h2", bvof).outerHeight(),
+		//~ fnfg_h = 	jQuery('.field-name-field-gallery-teaser', bbtc).outerHeight();
+		//~ 
+	var bvof = jQuery('#block-views-our-futured-courses-block');
+	
+	bvof.before(jQuery("h2", bvof));
+	
+		var	bvof = jQuery('#block-views-our-futured-courses-block');
+			bbtc = jQuery('#block-bean-traveling-courses'),
+			bvof_h = bvof.outerHeight(),
+			fnfg_img = 	jQuery('.field-name-field-gallery-img img', bbtc),
+			fnfg_h2_h = jQuery('h2', bbtc).outerHeight(true),
+			fnfg_item = 	jQuery('.field-name-field-gallery-img .field-item', bbtc),
+			fnfg_img_w = fnfg_item.first().outerWidth();
 		
 		
-	//~ jQuery(".content", bbtc).first().height(bvof_h - bvof_h2_h-fnfg_h2_h);
+	jQuery(".content", bbtc).first().height(bvof_h - fnfg_h2_h);
 	//~ bbtc.css({"min-height": bvof_h - bvof_h2_h });
 	
 	fnfg_img.each(function(i, val){
 		jQuery(val).height(fnfg_img_w);
 	});
-	
 	
 	//~ 
 	//~ #block-bean-nuri img,
@@ -119,14 +126,16 @@ jQuery(document).ready(function(){
 		var bbhss = blockSlideshow,
 			body = jQuery('.field-name-field-text-body' , bbhss),
 			height = body.outerHeight(),
-			menu = jQuery('header#menu'),
+			header_top = jQuery('header#top'),
+			header_top_h = header_top.outerHeight(),
+			menu = jQuery('nav#main-menu'),
 			menu_h = menu.outerHeight();
 			
 		jQuery('.field-name-field-slide-show-image', blockSlideshow).css({
-			"height" : height + menu_h + 50,
-			 top : menu_h*-1
+			"height" : height + menu_h + header_top_h + 50,
+			 top : (header_top_h+menu_h) * -1
 			});		
-		jQuery( bbhss).height(height  + 50);
+		jQuery( bbhss).height(height  +  50);
 	}
 	var nuriBlocks = jQuery('#block-bean-nuri,#block-bean-nuri2,#block-bean-nuri3, #block-bean-nuri4ac');
 	nuriBlocks.each(function(i, val){
