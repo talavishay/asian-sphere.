@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display a node.
@@ -79,25 +78,18 @@
  *
  * @ingroup themeable
  */
+   //~ dpm( $content);
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-
-
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-    dpm($content);
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
-  </div>
-
-
+<div id="node-<?php print $node->nid; ?>" class="nuri <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+	<div class="col-2">
+		<span class="left">
+			<?php print render($content['field_profile_image'])?>
+		</span>
+		<span class="field-content right">
+			<div class="title">
+				<h3><a href="<?php print $node_url;?>" ><?php print $title;?></a></h3>
+			</div>
+			<?php	 print  render($content)  ;?>
+		</span>
+	</div>
 </div>

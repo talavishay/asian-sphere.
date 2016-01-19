@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-	var news = jQuery(".view-news");
+	var news = jQuery(".view-news.view-display-id-block_1");
 			
 	jQuery(".wrap > div", news).each(function(i, val){
 			var val = jQuery(val),

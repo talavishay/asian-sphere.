@@ -40,7 +40,9 @@ function asian_theme_preprocess_image(&$variables) {
   }
 }*/
 function asian_theme_preprocess_field__field_gallery_img(&$vars) { 
-	$vars['items'] = array_slice($vars['items'], -3);
+	if(drupal_is_front_page()){
+		$vars['items'] = array_slice($vars['items'], -3);
+	}
 	return $vars;
 }
 function asian_theme_preprocess_field(&$vars) { 

@@ -24,8 +24,7 @@ text-decoration:none;color:inherit;
 
 }
 .view-news.view-display-id-page_1 .moreInfo{
-	-webkit-transform: translateY(-100%);
-	        transform: translateY(-100%);
+	transform: translateY(-100%);
 	padding-left:unset;
 }
 .view-news .views-field-edit-node {

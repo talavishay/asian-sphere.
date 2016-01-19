@@ -60,11 +60,11 @@ jQuery(document).ready(function(){
 	});
 
 	
-	jQuery('.views-row', gallery).each(function(i,val){
-		//calc desired height one time ..
-		w = (i == 0) ? jQuery(val).width():w;
-		jQuery(val).height(w);
-	});
+	//~ jQuery('.views-row', gallery).each(function(i,val){
+		//~ //calc desired height one time ..
+		//~ w = (i == 0) ? jQuery(val).width():w;
+		//~ jQuery(val).height(w);
+	//~ });
 	jQuery(jQuery("ul", gallery)[0].childNodes).each(function () { 
 		jQuery(this).html() || jQuery(this).remove();
 	});
@@ -99,19 +99,21 @@ jQuery(document).ready(function(){
 	
 		var	bvof = jQuery('#block-views-our-futured-courses-block');
 			bbtc = jQuery('#block-bean-traveling-courses'),
-			bvof_h = bvof.outerHeight(),
+			bvof_h = bvof.outerHeight(true),
 			fnfg_img = 	jQuery('.field-name-field-gallery-img img', bbtc),
-			fnfg_h2_h = jQuery('h2', bbtc).outerHeight(true),
+			bbtch2_h = jQuery('h2', bbtc).outerHeight(true),
 			fnfg_item = 	jQuery('.field-name-field-gallery-img .field-item', bbtc),
+			fnfg_item_h = 	jQuery('.field-name-field-gallery-img', bbtc).outerHeight(true) ,
+			
 			fnfg_img_w = fnfg_item.first().outerWidth();
-		
-		
-	jQuery(".content", bbtc).first().height(bvof_h - fnfg_h2_h);
-	//~ bbtc.css({"min-height": bvof_h - bvof_h2_h });
 	
 	fnfg_img.each(function(i, val){
 		jQuery(val).height(fnfg_img_w);
 	});
+		
+		
+	//~ jQuery(".field-name-field-body", bbtc).first().height(bvof_h -fnfg_item_h  );
+	//~ bbtc.css({"min-height": bvof_h - bvof_h2_h });
 	
 	//~ 
 	//~ #block-bean-nuri img,
