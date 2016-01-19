@@ -3,7 +3,8 @@
 function asian_theme_preprocess_calendar_mini(&$vars,$name){
 	//format header day names
 	foreach($vars["day_names"] as $k => $v){
-		$vars["day_names"][$k]["data"] = explode(" ", $v["class"])[1];
+		$_v = explode(" ", $v["class"]);
+		$vars["day_names"][$k]["data"] = $_v[1];
 	};
 	//dialog for event info
 	drupal_add_library('system', 'ui.dialog');
