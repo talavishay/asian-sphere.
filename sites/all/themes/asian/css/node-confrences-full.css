@@ -9,6 +9,9 @@ header{
   direction : rtl;
 }
 .jumpMenu{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 footer .jumpMenu a{
@@ -16,7 +19,9 @@ footer .jumpMenu a{
 }
 header .jumpMenu{
   width: 70%;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   
 }
 .region-footer .jumpMenu{
@@ -24,7 +29,10 @@ header .jumpMenu{
   border-left-width: 0px;
   border-right-width: 0px;
   padding: .4em 1em ;
-  justify-content: space-between
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between
 }
 .region-footer {
   padding-top: 5px;  
@@ -83,8 +91,14 @@ header .jumpMenu{
   padding-bottom: 1.5em;
 }
 .field-name-field-conference-speaker > .field-items{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .field-name-field-conference-speaker > .field-items > .field-item{
   width : 20%;
@@ -94,9 +108,18 @@ header .jumpMenu{
   height: auto;
 }
 #registration-form > div{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   
 }
 #registration-form > div >div:not(#edit-actions){
@@ -145,8 +168,14 @@ header .jumpMenu{
   display: none;
 }
 .col_2{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between
     
 }
 .col_2 > .field-name-field-map{
@@ -232,10 +261,9 @@ border-top: 5px solid black;
     
 }
 .field-name-field-schedule thead{
-background-color: #cdcccc;
-  
+background-color: #cdcccc;  
 }
-}
+
 th {
     border-bottom: unset;
 }
