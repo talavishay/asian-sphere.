@@ -3,7 +3,7 @@ sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
 
-#sites/all/modules/*
+sites/all/modules/*
 #!sites/all/modules/lifebook_responsive
 
 sites/all/libraries
