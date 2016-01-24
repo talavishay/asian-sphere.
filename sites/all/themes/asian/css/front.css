@@ -4,12 +4,26 @@ body{
 nav#main-menu{
 	padding-top: 67px;
 }
+footer #block-webform-client-block-4 textarea,
+footer #block-webform-client-block-4 input.form-text,
+footer #block-webform-client-block-4{
+    background-color: #222 !important;
+}
+#webform-client-form-4 >div>.form-item,
+#webform-client-form-5 >div>.form-item{
+	margin-bottom: .6em ;
+}
+
 .sep,
 #content{
-padding-top: 2em;
+padding-top: 1.35em;
+}
+#block-views-gallery-block + .sep{
+	padding-top: 0px;
 }
 #block-bean-homepage-slide-show .content{
 margin:unset;
+	display: initial;
 }
 #block-views-news-block-1 .content,
 #block-views-our-futured-courses-block .content {
@@ -42,7 +56,8 @@ top: 0px;
 	font-size: 1.3em; 
 	line-height: 1.2em;
 	position: absolute; z-index: 1; 
-	    margin-bottom: 3em;
+	
+/* 	    margin-bottom: 3em; */
 }
 /* 	text-shadow: 0px 0px 11px white !important; */
 
@@ -72,6 +87,7 @@ line-height: 1.1em;
 }
 #block-views-news-block-1 .views-field-body {
 	word-spacing: -0.1em;
+	font-weight: bold;
 }
 #block-views-news-block-1 {
 	position: relative;
@@ -80,7 +96,7 @@ line-height: 1.1em;
 	padding: 0px;
 }
 #block-views-news-block-1 tr {
-	width: 100%; padding-bottom: 2.5em; display: inline-block; position: relative;
+	width: 100%; padding-bottom: 1.8em; display: inline-block; position: relative;
 }
 #block-views-news-block-1,
 #block-views-news-block-1 tr:nth-child(3) {
@@ -91,7 +107,9 @@ line-height: 1.1em;
 	padding-top: 5px;
 }
 #block-views-news-block-1 {
-	padding: 0px .2% 0px 0%; width: 67%;  border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style: solid;
+	padding: 0px 1% 0px 1.2%;
+	width: 62%;
+	border-right: 1px solid #999;
 }
 #block-views-news-block-1 p:last-child {
 	margin-bottom: 0px;
@@ -99,11 +117,18 @@ line-height: 1.1em;
 .view-news .views-field-created{
 	width: 4em;
 }
-#block-views-calendar-block-1 {
-	width: 30%; padding-right: 2.4%; float: right;
+#block-views-calendar-block-1 .view-content{
+	background: linear-gradient( white 0%  ,#f4f4f4 100% );
 }
-.view-display-id-block_1.view-calendar td {
-	
+#block-views-calendar-block-1 {
+width: 33.5%;
+/* padding-right: 1.7%; */
+	margin-bottom: 0px;
+
+}
+.view-display-id-block_1.view-calendar  table * ,
+.view-display-id-block_1.view-calendar table {
+	background-color: transparent !important;;
 }
 .view-display-id-block_1.view-calendar th {
 	line-height: 1.8em; font-size: 1em;
@@ -112,7 +137,11 @@ line-height: 1.1em;
 	text-decoration: none;
 }
 .view .date-nav-wrapper .date-heading h3 {
-	line-height: 1.8em; font-size: 1.4em; font-weight: bold; vertical-align: bottom;
+	line-height: 1.6em; 
+	font-size: 1.4em;
+	font-weight: bold; 
+	vertical-align: bottom;
+	
 }
 .calPopup .ui-dialog-titlebar {
 	
@@ -153,7 +182,7 @@ line-height: 1.1em;
 	padding: 0px 4% 0px 0%; width: 66%; border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style: solid;
 }
 #block-bean-traveling-courses {
-	width: 29%;
+	width: 26%;
 	 padding-right : 1.5%;
 	padding-left: 2%;
 }
@@ -221,15 +250,27 @@ line-height: 1.1em;
 .eventName.ui-tooltip {
 	background: red; color: white;
 }
+#block-views-calendar-block-1 .view-header h3{
+	font-size: 1.15em;
+	line-height: 2.1em;
+	letter-spacing: 2px;
+}
 .view-header h3 a {
-	width: 100%; color: white;
+	
+	width: 100%; 
+	color: white;
+	
+	font-weight: inherit;
+	
 }
 .pager li a {
 	margin: 0px !important; padding: 0px !important; height: inherit;
+
 }
 .pager li {
 	margin: 0px !important; padding: 0px !important; height: inherit;
 	cursor: pointer;
+	text-indent: -9999px;
 }
 ul.pager {
 	margin: 0px !important; padding: 0px !important; height: inherit;
@@ -295,11 +336,13 @@ display: block;
 	.sep,
 .moreInfo,
 .moreInfoBar {
-	 border-bottom-color: #aaa; 
-	border-bottom-width: 2px; 
+	 border-bottom-color: #303030; 
+	border-bottom-width: 1px; 
 	border-bottom-style: dashed; 
 	display: block;
+		
 	
+
 }
 #block-views-stuff-view-block-after {
 	height: 2.7em; text-align: right; color: black; line-height: 2.7em; margin-top: 2.7em; border-bottom-color: gray; border-bottom-width: 0.12em; border-bottom-style: dashed; display: block;
@@ -322,8 +365,10 @@ display: block;
 	height: 2.7em; display: block; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAQAAAC1p96yAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAJkSURBVDjLldVBaFxVFMbx37S1zSLYoSChZoQUpAYxLSSgUnRRXKiJpUoWIghW4lLBFnGRboTupAUpgm4EKaIIbtrQdu8y0F0dsAgVWsckQiKxYtOYfC4yecm8vI7JfZvLd8//nsO993unFltHbcDrXtLwuLo5Lb+6ZirzFaEpfcZMbxEjll1xtCzWNmevHfG5F8GMa5p+s6BPvxEv60V863T+qMxu3D0R046plWraZ9xdEbcNbdKLyUdWxZJJu1NZvbpLIhYdL+HGrYobnqlGi/CTZsSCw5twR9wTNzzSHY4wYFHcsn8D/1Es/V/mYoMJEZ+2cWMiJreE7faWU055dsvKVfGPxho+LaarDswJS+K+V0r6QfPiYjAg4thDCn2tvcGrJf2MaKnxofi9fM8dr3Btg9EO9ZCI55kSX3U9qlH3xZKxDvUncXaPBprFsx0zVGGM77xtr8u1NzJVaE1PazAr3iz2/Lrrnf3rRBH5mbi8Sx1/2t544N3a3vZ8AfVd5tC3TfxvH+dBe96HuT1aGvqLgHO+rMDeM4FZL+SXQutHi+/FD11P/hMRdzzZod4Rp3lH/GXfDuFhEU9xwLIY3wkczovm2pu/Iu6q7wAesbxmMuGoVXGpwnGDBg06UNJ7NMWs3nW/fyPi5Db9fkHE+xu/i8fcFjMGtgGPWhHX1wy+Lg5ZFIsmuqI9LlgRNz3aVoql4xZEXHXwIfCIpoibnii0TcuH3RIx74xDJXTYecsirq9njnKX2e+sD/S0DbnRZYY1wJxzvshKtx7XcFGrovamSb1lsSN7UUXNc+UOm5+rLPgftyak2Wl30hYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMDEtMTJUMTg6NTQ6NDgrMDA6MDDXeRWJAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTAxLTEyVDE4OjU0OjQ4KzAwOjAwpiStNQAAAABJRU5ErkJggg=="); background-repeat: no-repeat; background-color: rgb(220, 217, 217);
 }
 .moreInfoBar {
-	background-position: right 2.2em center;
-	padding-right: 4.5em; font-weight: bold;
+background-position: right 1em center;
+padding-right: 3.5em;
+font-weight: bold;
+letter-spacing: 1px;
 }
 .moreInfo {
 	background-position: center; left: 0px; width: 100%; bottom: -2.7em; position: absolute;
@@ -337,7 +382,8 @@ display: block;
 	display: flex; -ms-flex-pack: justify; justify-content: space-between; -webkit-justify-content: space-between; -webkit-box-pack: justify;
 }
 .view-stuff-view .views-row {
-	border-radius: 0.5em; width: 23.5%; overflow: hidden; 
+	border-radius: 0.5em 0.5em 0em 0em ;
+	width: 23.5%; overflow: hidden; 
 	box-shadow: 0px 0px 0px 1px #CCC;
 }
 
@@ -367,7 +413,9 @@ display: block;
 	position: relative;
 }
 .view-stuff-view .views-field-title {
-	padding: 10px 0px; text-align: center; font-size: 1.2em;
+	padding: 10px 0px; text-align: center; 
+font-size: 1.4em;
+line-height: 1em;
 }
 .view-stuff-view .views-row:hover .views-field-title {
 	color: red;
@@ -421,14 +469,17 @@ display: block;
 	padding: .3em 0;
 }
 .view-our-futured-courses .views-row > .views-field-nothing-1 {
-	
-	width: 84%; 
-	border-right-color: rgb(249, 249, 247); border-right-width: 1px; border-right-style: dashed;
+	width: 82%;
 }
+
 .view-our-futured-courses .views-row > .views-field-nothing {
 	width: 18%;
-/* 	padding-top: 5px; */
-	 margin-left: 1%; min-height: 100%;
+	padding-left: 1%;
+	margin-left: 1%; 
+	min-height: 100%;
+	border-left-color: rgb(249, 249, 247);
+	border-left-width: 1px; 
+	border-left-style: dashed;
 }
 
 #block-bean-traveling-courses {
@@ -440,7 +491,8 @@ display: block;
 	display: inline-block;
 }
 #block-views-our-futured-courses-block {
-	width: 67%;
+	width: 69%;
+	border-right: 1px solid #aaa;
 }
 #block-bean-traveling-courses p{
 	margin-bottom: 1.6em;
@@ -470,8 +522,14 @@ display: block;
 /* 
 testimonials 
 */
-
-
+.view-testimonials p{
+	color: #858181;
+font-style: italic;
+	
+}
+.view-testimonials .title {
+	color : #5a5555;
+}
 .view-testimonials .view-content {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -486,7 +544,7 @@ testimonials
 	        justify-content: space-between;
 }
 .view-testimonials .view-content .views-row-odd {
-	padding-right: 4%; border-right-color: rgb(170, 170, 170); border-right-width: 2px; border-right-style: dashed;
+	padding-right: 4%; border-right-color: #303030; border-right-width: 1px; border-right-style: dashed;
 }
 .view-testimonials .view-content .views-row {
 	padding-bottom: 3em;
@@ -507,10 +565,12 @@ testimonials
 
 }
 .view-testimonials .view-content :nth-child(6).views-row-even {
-	
+	margin-bottom: 0px;
+	padding-bottom: unset; 
 }
 .view-testimonials .view-content :nth-child(5).views-row-odd {
-	
+	margin-bottom: 0px;
+	padding-bottom: unset; 
 }
 .view-testimonials .views-field-body {
 	width: 69%;
@@ -535,7 +595,7 @@ footer #block-webform-client-block-64 p:last-child{
 	margin-bottom: 0px;
 }
 footer #block-webform-client-block-64 p{
-margin: 1.25em 0;
+margin: 0.95em 0;
 	line-height: 1.3em;
 }
 #block-views-testimonials-block +.sep{

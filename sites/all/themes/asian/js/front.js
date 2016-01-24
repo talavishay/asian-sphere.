@@ -5,7 +5,7 @@ var docElem = document.documentElement,
 	
 jQuery(document).ready(function(){
 	var body = jQuery("body");
-	if(body.hasClass("front")){
+	
 		
 	var content = jQuery("#content", body),
 		news = jQuery("#block-views-news-block-1", content),
@@ -128,17 +128,22 @@ jQuery(document).ready(function(){
 		var bbhss = blockSlideshow,
 			body = jQuery('.field-name-field-text-body' , bbhss),
 			height = body.outerHeight(),
-			header_top = jQuery('header#top'),
+			header_top = jQuery('header#headerRegion'),
 			header_top_h = header_top.outerHeight(),
 			menu = jQuery('nav#main-menu'),
 			menu_h = menu.outerHeight();
 			
-		jQuery('.field-name-field-slide-show-image', blockSlideshow).css({
-			"height" : height + menu_h + header_top_h + 170,
-			 top : (header_top_h+menu_h) * -1
+	jQuery('.field-name-field-slide-show-image', blockSlideshow).css({
+			"height" : height + menu_h +30 ,//body position :absolute, top:30...
+			 top : (menu_h) * -1
 			});		
-		jQuery( bbhss).height(height  +  50);
-	}
+		jQuery( bbhss).height(height+30	 );
+	
+	
+	
+	
+	
+	
 	var nuriBlocks = jQuery('#block-bean-nuri,#block-bean-nuri2,#block-bean-nuri3, #block-bean-nuri4ac');
 	nuriBlocks.each(function(i, val){
 		var m = jQuery('<div class="moreInfo" />');
@@ -209,7 +214,7 @@ function _fix_slideshow(_class){
 		var body = jQuery('.field-name-field-text-body', slideshow.parents(".content")),
 			menu = jQuery('#main-menu'),
 			width   =	header.width()-30,
-			height	=	body.height() +  menu.height();
+			height	=	body.outerHeight() +  menu.outerHeight();
 			
 		
 		
@@ -224,8 +229,10 @@ function _fix_slideshow(_class){
 		changedOpts.containerResize = 1;
 		changedOpts.width       =       width;
 		changedOpts.height      =       height;
-		//~ changedOpts.height      =       100;
-			 
+		changedOpts.before      =       function(currSlideElement, nextSlideElement, options, forwardFlag) {
+				var h = jQuery("#headerRegion").height();
+				 jQuery(nextSlideElement).height(h);
+		};
 		slideshow.cycle(changedOpts);
 	}
 

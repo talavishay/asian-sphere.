@@ -44,7 +44,7 @@ tbody {
     text-indent : -9999px;
 }
 body{
-font-family: "helvetica";
+font-family:  "arial", "Arial";
 font-size: 16px;
  color: #414748;
 }
@@ -70,7 +70,8 @@ a{
 .region-content h2,
 .block h2 {
     margin-top : unset;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    letter-spacing: 1px;
 }
 
 /*
@@ -137,9 +138,7 @@ header#top {
     z-index: 9999;
     position: relative;
 }
-header#headerRegion{
-    margin-bottom: 2em;    
-}
+
 #logo{	
 position: absolute;	
     z-index: 8;
@@ -199,7 +198,7 @@ header#top .wrap {
 
 ul#main-menu-links li a {
     text-decoration: none;
-	width : 100%;
+/* 	width : 100%; */
 	margin: 0px;
     line-height: 2.3em;
 	text-align : center;
@@ -217,13 +216,16 @@ ul#main-menu-links {
     width : 100%;
     background-color : black;
     line-height: 0em;
+    display: flex;
 }
 .opacity_box {
 	padding: 10px 20px 2px;
     border-radius: 1px; 
     background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 59px;
 }
 ul#main-menu-links li {
+    text-align: center;
     word-break: keep-all;
     white-space: nowrap;
     overflow: hidden;
@@ -377,7 +379,7 @@ form.webform-client-form .form-submit{
 }
 footer .form-submit:hover,
 .form-submit:hover{
-    background-color: #d40000 !important;;
+    background-color: #f20d0d !important;;
     
 }
 
@@ -388,7 +390,7 @@ h2 > a[id]:before {
   display: block; 
 }
 footer form.webform-client-form .form-submit{
-    background-color: #d40000 !important;;
+/*     background-color: #d40000 !important;; */
 }
 .field-slideshow {
 	width: 100% !important;
@@ -453,7 +455,7 @@ padding-bottom: 0px  !important
 }
 #block-webform-client-block-64 input[type=text]{
     max-width: 90%;
-    padding: 0.4em 0.9em;
+    padding: 0.4em 5%;
 }
 
 #block-webform-client-block-64 .form-submit{
@@ -465,7 +467,7 @@ padding-right: 2em;
     direction: rtl;
 }
 #block-webform-client-block-64 .webform-component-markup a{
-    color:#d40000 !important;;
+    color:#f20d0d !important;;
     text-decoration: none;
 }
 
@@ -983,12 +985,14 @@ background-image: url('/modules/file/icons/image-x-generic.png');
 .view-gallery ul {
 	list-style: none;
 }
+/*
 .field-name-field-gallery-img img:hover,
 .view-gallery img:hover{
-	    -webkit-transform: scale(1.1) rotate(1deg);
+ 	    -webkit-transform: scale(1.1) rotate(1deg);
 	            transform: scale(1.1) rotate(1deg);
-    box-shadow: 0px 0px 10px 6px black;
-}
+    box-shadow: 0px 0px 10px 6px black; 
+  
+}*/
 .view-gallery .views-row *{
 	margin: 0px !important;
 	padding: 0px !important;
