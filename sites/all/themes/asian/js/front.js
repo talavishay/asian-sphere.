@@ -43,14 +43,14 @@ jQuery(document).ready(function(){
 	gallery.parents(".block").before('<div class="sep"><div>');
 	
 	
-	var _a = jQuery('<a class="moreInfoBar"  href="#"></a>'),
+	var _a = jQuery('<a class="moreInfoBar"  href=""></a>'),
 		ts= 'go to full staff list',
 		cs='go to full courses list',
 		position = {				my : 'bottom',				at : 'top'};
 	//~ jQuery('#block-views-stuff-view-block').after(_a.clone().text(ts).attr("title",ts).tooltip({position:position}) );
 	//~ jQuery('#block-bean-traveling-courses').after(_a.clone().text(cs).attr("title",cs).tooltip({position:position}) );
-	jQuery('#block-views-stuff-view-block').after(_a.clone().text(ts).attr("title",ts) );
-	jQuery('#block-bean-traveling-courses').after(_a.clone().text(cs).attr("title",cs) );
+	jQuery('#block-views-stuff-view-block').after(_a.clone().text(ts).attr({"title":ts, "href" : "/staff"}) );
+	jQuery('#block-bean-traveling-courses').after(_a.clone().text(cs).attr({"title":cs, "href": "/Curriculum"}) );
 	
 	jQuery('.views-field-field-profile-image', staff).each(function(i,val){
 		//calc desired height one time ..

@@ -1,0 +1,600 @@
+.cover{
+  max-width: 100%;
+}
+.where{
+  font-size: 1.4em ;
+}
+.date{
+  font-size: 2em ;
+}
+.time{
+  margin-top: 2px;
+  font-size: .9em;
+}
+.where,
+.date,
+.time{
+color: white;
+}
+/* You named this layer  */
+#content {
+  margin-top: 0px !important;
+  width: 1000px;
+/*
+  height: 1528px;
+*/
+  z-index: 1;
+}
+
+/* You named this layer bgfooter */
+#Layer-2 {
+  position: absolute;
+  left: 0px;
+  top: 1273px;
+  width: 1000px;
+  height: 255px;
+  z-index: 2;
+}
+
+/* You named this layer The Asia Sphere Program The He */
+#Layer-3 {
+  position: absolute;
+  left: 14px;
+  top: 125px;
+  width: 969px;
+  height: 13px;
+  z-index: 3;
+}
+
+/* You named this layer  65 */
+#Layer-4 {
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  width: 1000px;
+  height: 70px;
+  z-index: 4;
+}
+
+/* You named this layer Contact Us */
+#Layer-5 {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 73px;
+  height: 12px;
+  z-index: 5;
+}
+
+/* You named this layer  84  2 */
+#Layer-6 {
+  position: absolute;
+  left: 648px;
+  top: 21px;
+  width: 212px;
+  height: 32px;
+  z-index: 6;
+}
+
+/* You named this layer Phone */
+#Layer-7 {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  width: 36px;
+  height: 10px;
+  z-index: 7;
+}
+
+/* You named this layer  30 */
+#Layer-8 {
+  position: absolute;
+  left: 129px;
+  top: 21px;
+  width: 216px;
+  height: 32px;
+  z-index: 8;
+}
+
+/* You named this layer  84  */
+#Layer-9 {
+  position: absolute;
+  left: 390px;
+  top: 21px;
+  width: 216px;
+  height: 32px;
+  z-index: 9;
+}
+
+/* You named this layer Email */
+#Layer-10 {
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  width: 30px;
+  height: 10px;
+  z-index: 10;
+}
+
+/* You named this layer Name */
+#Layer-11 {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  width: 33px;
+  height: 10px;
+  z-index: 11;
+}
+
+/* You named this layer  31 */
+#Layer-12 {
+  position: absolute;
+  left: 879px;
+  top: 18px;
+  width: 100px;
+  height: 38px;
+  z-index: 12;
+}
+
+/* You named this layer  34 */
+#Layer-13 {
+  position: absolute;
+  left: 72px;
+  top: 7px;
+  width: 22px;
+  height: 22px;
+  z-index: 13;
+}
+
+/* You named this layer Submit */
+#Layer-14 {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  width: 48px;
+  height: 10px;
+  z-index: 14;
+}
+
+/* You named this layer ------------------------------- */
+#Layer-15 {
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  width: 998px;
+  height: 1px;
+  z-index: 15;
+}
+
+/* You named this layer ------------------------------- */
+#Layer-16 {
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 998px;
+  height: 1px;
+  z-index: 16;
+}
+
+/* You named this layer ------------------------------- */
+#Layer-17 {
+  position: absolute;
+  left: 2px;
+  top: 69px;
+  width: 998px;
+  height: 1px;
+  z-index: 17;
+}
+
+/* You named this layer ------------------------------- */
+#Layer-18 {
+  position: absolute;
+  left: 2px;
+  top: 155px;
+  width: 998px;
+  height: 1px;
+  z-index: 18;
+}
+
+/* You named this layer hujilogo */
+#Layer-19 {
+  position: absolute;
+  left: 167px;
+  top: 173px;
+  width: 217px;
+  height: 73px;
+  z-index: 19;
+}
+
+/* You named this layer haifalogo */
+#Layer-20 {
+  position: absolute;
+  left: 433px;
+  top: 191px;
+  width: 94px;
+  height: 36px;
+  z-index: 20;
+}
+
+/* You named this layer   */
+#Layer-21 {
+  position: absolute;
+  left: 431px;
+  top: 233px;
+  width: 97px;
+  height: 8px;
+  z-index: 21;
+}
+
+/* You named this layer All rights reserved To */
+#Layer-22 {
+  position: absolute;
+  left: 14px;
+  top: 206px;
+  width: 142px;
+  height: 13px;
+  z-index: 22;
+}
+
+/* You named this layer Last modified 28042015 */
+#Layer-23 {
+  position: absolute;
+  left: 817px;
+  top: 231px;
+  width: 155px;
+  height: 9px;
+  z-index: 23;
+}
+
+/* You named this layer Curriculum    Staff     Registr */
+#Layer-24 {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  width: 955px;
+  height: 14px;
+  z-index: 24;
+}
+
+/* You named this layer face */
+#Layer-25 {
+  position: absolute;
+  left: 817px;
+  top: 172px;
+  width: 34px;
+  height: 34px;
+  z-index: 25;
+}
+
+/* You named this layer twit */
+#Layer-26 {
+  position: absolute;
+  left: 942px;
+  top: 178px;
+  width: 32px;
+  height: 27px;
+  z-index: 26;
+}
+
+/* You named this layer g */
+#Layer-27 {
+  position: absolute;
+  left: 882px;
+  top: 173px;
+  width: 32px;
+  height: 32px;
+  z-index: 27;
+}
+
+/* You named this layer  68 */
+#Layer-28 {
+/*   width: 989px; */
+/*   height: 602px; */
+  z-index: 28;
+  position : relative;
+/*   left : -20px; */
+}
+
+/* You named this layer gotobut */
+#Layer-29 {
+  position: absolute;
+  left: 350px;
+  top: 512px;
+  width: 286px;
+  height: 57px;
+  z-index: 29;
+  background-color: #E01809 !important;: 
+}
+
+/* You named this layer  167  */
+#Layer-30 {
+  position: absolute;
+  left: 519px;
+  top: 325px;
+  width: 332px;
+  height: 111px;
+  z-index: 30;
+  background-color: black;
+}
+
+/* You named this layer Go to Conference Site */
+#Layer-31 {
+  position: absolute;
+  left: 17px;
+  top: 22px;
+  width: 250px;
+  height: 19px;
+  z-index: 31;
+  text-align: center;
+}
+
+/* You named this layer  73 */
+#Layer-32 {
+  position: absolute;
+  left: 21px;
+  top: 41px;
+  width: 27px;
+  height: 27px;
+  z-index: 32;
+}
+
+/* You named this layer Jerusalem  Mount Scopus campus */
+#Layer-33 {
+  position: absolute;
+  left: 60px;
+  top: 46px;
+  width: 260px;
+  height: 52px;
+  z-index: 33;
+}
+
+/* You named this layer Where */
+#Layer-34 {
+  position: absolute;
+  left: 23px;
+  top: 16px;
+  width: 55px;
+  height: 14px;
+  z-index: 34;
+}
+
+/* You named this layer  69 */
+#Layer-35 {
+  position: absolute;
+  left: 164px;
+  top: 325px;
+  width: 332px;
+  height: 111px;
+  z-index: 35;
+  background-color: black;
+}
+
+/* You named this layer 24-27-Dec 2015 */
+#Layer-36 {
+  position: absolute;
+  left: 64px;
+  top: 47px;
+  width: 237px;
+  height: 23px;
+  z-index: 36;
+}
+
+/* You named this layer  71 */
+#Layer-37 {
+  position: absolute;
+  left: 25px;
+  top: 43px;
+  width: 25px;
+  height: 25px;
+  z-index: 37;
+}
+
+/* You named this layer Starting 0900 am */
+#Layer-38 {
+  position: absolute;
+  left: 64px;
+  top: 79px;
+  width: 122px;
+  height: 14px;
+  z-index: 38;
+}
+
+/* You named this layer When */
+#Layer-39 {
+  position: absolute;
+  left: 21px;
+  top: 16px;
+  width: 48px;
+  height: 14px;
+  z-index: 39;
+}
+
+/* You named this layer Conference  Asian Sphere */
+#Layer-40 {
+  position: absolute;
+  left: 289px;
+  top: 77px;
+  width: 466px;
+  height: 168px;
+  z-index: 40;
+}
+
+/* You named this layer header1 */
+#Layer-41 {
+  position: absolute;
+  left: 170px;
+  top: 324px;
+  width: 144px;
+  height: 19px;
+  z-index: 41;
+}
+
+/* You named this layer ynamic and exceptional environm */
+#Layer-42 {
+  position: absolute;
+  left: 41px;
+  top: 1126px;
+  width: 933px;
+  height: 111px;
+  z-index: 42;
+}
+
+/* You named this layer ynamic and exceptional environm */
+#Layer-43 {
+  position: absolute;
+  left: 41px;
+  top: 991px;
+  width: 933px;
+  height: 111px;
+  z-index: 43;
+}
+
+/* You named this layer pic */
+#Layer-44 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1000px;
+  height: 235px;
+  z-index: 44;
+}
+
+/* You named this layer translayer */
+#Layer-45 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1000px;
+  height: 67px;
+  z-index: 45;
+}
+
+/* You named this layer The Asian Sphere */
+#Layer-46 {
+  position: absolute;
+  left: 52px;
+  top: 11px;
+  width: 154px;
+  height: 18px;
+  z-index: 46;
+}
+
+/* You named this layer logoasian */
+#Layer-47 {
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  width: 205px;
+  height: 60px;
+  z-index: 47;
+}
+
+/* You named this layer bg */
+#Layer-48 {
+  position: absolute;
+  left: 0px;
+  top: 236px;
+  width: 1000px;
+  height: 43px;
+  z-index: 48;
+}
+
+/* You named this layer Curriculum     Staff        Reg */
+#Layer-49 {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 955px;
+  height: 18px;
+  z-index: 49;
+}
+
+/* You named this layer on */
+#Layer-50 {
+  position: absolute;
+  left: 864px;
+  top: 274px;
+  width: 110px;
+  height: 7px;
+  z-index: 50;
+}
+
+/* You named this layer on */
+#Layer-51 {
+  position: absolute;
+  left: 859px;
+  top: 35px;
+  width: 25px;
+  height: 27px;
+  z-index: 51;
+}
+
+/* You named this layer  74 */
+#Layer-52 {
+  position: absolute;
+  left: 957px;
+  top: 34px;
+  width: 26px;
+  height: 26px;
+  z-index: 52;
+}
+
+/* You named this layer  75 */
+#Layer-53 {
+  position: absolute;
+  left: 898px;
+  top: 33px;
+  width: 25px;
+  height: 25px;
+  z-index: 53;
+}
+
+/* You named this layer  76 */
+#Layer-54 {
+  position: absolute;
+  left: 775px;
+  top: 35px;
+  width: 25px;
+  height: 23px;
+  z-index: 54;
+}
+
+/* You named this layer  77 */
+#Layer-55 {
+  position: absolute;
+  left: 818px;
+  top: 34px;
+  width: 25px;
+  height: 24px;
+  z-index: 55;
+}
+
+/* You named this layer  78 */
+#Layer-56 {
+  position: absolute;
+  left: +1143px;
+  top: +613px;
+  width: 64px;
+  height: 51px;
+  z-index: 56;
+}
+
+/* You named this layer  79 */
+#Layer-57 {
+  position: absolute;
+  left: 859px;
+  top: 35px;
+  width: 25px;
+  height: 29px;
+  z-index: 57;
+}
+
+/* You named this layer i */
+#Layer-58 {
+  position: absolute;
+  left: 11px;
+  top: 5px;
+  width: 3px;
+  height: 15px;
+  z-index: 58;
+}

@@ -1,0 +1,266 @@
+body{
+  width:989px !important;;
+}
+.content{
+  margin: 0px !important;;
+}
+header{
+  background-color: black;
+  direction : rtl;
+}
+.jumpMenu{
+  display: flex;
+}
+footer .jumpMenu a{
+/*   width: 20%; */
+}
+header .jumpMenu{
+  width: 70%;
+  justify-content: space-around;
+  
+}
+.region-footer .jumpMenu{
+  border: 1px dashed white;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: .4em 1em ;
+  justify-content: space-between
+}
+.region-footer {
+  padding-top: 5px;  
+}
+footer .content{
+  padding: .4em 1em ;
+}
+.not-front .region-footer > .block > .content {
+    width: unset !important;;
+}
+header .jumpMenu{
+  padding: 70px 10px 20px;
+  direction: rtl;
+}
+.jumpMenu a{
+  font-size: 1.4em;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  
+}
+#Layer-28 {
+/* 	left: -110px !important;; */
+}
+#registration-form #edit-cancel {
+/*   width: 70%; */
+  display: none;
+}
+#registration-form {
+ /*   anchor trick..*/
+  padding-top: 141px !important;
+    margin-top: -140px;
+}
+#registration-form .form-actions{
+  margin-bottom: unset;
+}
+#registration-form input{
+  width: 100%;
+}
+.field-label{
+  font-size: 1.7em;
+  line-height: em;
+  margin-bottom: 2em;
+  text-transform: capitalize;
+}
+.field-name-body .field-label{
+  margin-bottom: 0px;
+}
+.field-name-body p:first-child{
+  margin-top: 0px;
+}
+.field-name-body{
+  margin-top: 1.5em;
+}
+.field-name-field-register {
+  padding-bottom: 1.5em;
+}
+.field-name-field-conference-speaker > .field-items{
+  display: flex;
+  justify-content: space-between;
+}
+.field-name-field-conference-speaker > .field-items > .field-item{
+  width : 20%;
+}
+.field-name-field-conference-speaker > .field-items img{
+  max-width: 100%;
+  height: auto;
+}
+#registration-form > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+#registration-form > div >div:not(#edit-actions){
+  width:25%;
+}
+#registration-form input[type=text]{
+  padding: 0.51em .5em;
+  color : black;
+}
+#content  #registration-form input.form-submit{
+  background-image: unset;
+  padding:.3em ;
+  padding-top: 0px;
+  border-radius: unset;
+}
+.form-item-anon-mail .description{
+  display: none;
+}
+.field-name-body{
+  text-align: justify;
+}
+.content > .field-name-field-speakers,
+.content > .field-name-field-register ,
+.content > .field-name-body{
+  margin: 1em 0;
+  border-bottom: 1.5px dashed #aaa;
+}
+.node-type-conferences > header,
+/* .node-type-conferences > footer, */
+.node-type-conferences > nav{
+  display: none;
+}
+.not-logged-in.node-type-conferences .tabs{
+  display: none;
+}
+.field-name-body .field-label{
+  text-transform: capitalize;
+}
+.register{
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em
+}
+.form-item-state,
+.form-item-who-is-registering{
+  display: none;
+}
+.col_2{
+  display: flex;
+  justify-content: space-between
+    
+}
+.col_2 > .field-name-field-map{
+  width: 60%;
+}
+.col_2 > form{
+  width: 27.6%;
+  padding:0px !important;
+  margin:0px !important;
+}
+input.form-text,
+form#webform-client-form-4 textarea{
+  background-color: #f1f1f1;
+  width: 90%;
+  padding: 0.51em 5% !important;;
+  border-radius: 2px;
+}
+#content  form#webform-client-form-4 input.form-text,
+form#webform-client-form-4 textarea{
+  
+  box-shadow: unset;
+}
+#content  form#webform-client-form-4 .form-actions,
+form#webform-client-form-4 textarea{
+  width: 140%;
+}
+#content form#webform-client-form-4 .form-submit{
+  background-image: none;
+  padding: .2em .5em;
+  border-radius: unset;
+}
+#block-webform-client-block-4 .content{
+  padding: unset;
+}
+.google_map_field_display ,
+.field-name-field-map .field-items,
+.field-name-field-map .field-item{
+	height: 100%;
+  width: 100%;
+}
+#content  #webform-client-form-4 .form-actions{
+  margin-bottom: unset;
+}
+.field-name-field-map .google-map-field-label{
+  display: none;
+}
+
+.webform-component--comments{
+  margin-bottom: 0px !important;;
+}
+#content input[type=text],
+#content input[type=email],
+textarea{
+  color: #000;
+  font-size: 1em;
+}
+#content  ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: #000;
+  opacity: 1;
+}
+#content  ::-moz-placeholder { /* Firefox 19+ */
+  color: #000 ;
+  opacity: 1;
+}
+#content  :-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+#content  ::-ms-input-placeholder { /* Edge */
+  color: #000;
+}
+.field-name-field-schedule table{
+  width:95% !important;;
+  margin: 0 auto;
+  border-top-width: 0px !important;
+  border-bottom-width: 0px !important;;
+}
+.field-name-field-schedule {
+border-top: 5px solid black;
+  border-bottom : 5px solid black;
+}
+.field-name-field-schedule tbody{
+  background-color: #ebeaea
+    
+}
+.field-name-field-schedule thead{
+background-color: #cdcccc;
+  
+}
+}
+th {
+    border-bottom: unset;
+}
+.field-name-field-schedule thead th{
+text-align: center ;
+}
+
+#Schedule{
+  margin: 3em 0 2em;
+
+}
+#Register,
+#Speakers,
+#About{
+  border-bottom: 1px dashed #000 !important;;
+}
+#Register + .field,
+.anchor:not(#Schedule){
+  padding: 0 1em;
+}
+.anchor{
+  margin-bottom: 1em;
+  padding-top:50px !important;;
+  margin-top: -50px;
+  
+    
+  
+}

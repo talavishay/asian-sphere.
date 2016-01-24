@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
 	var footer = jQuery("footer#footer"),
 		content = jQuery("#content"),
-		gallery = jQuery('.node-gallery', content);
+		gallery = jQuery('.node-gallery,.view-gallery', content);
 	
 		contactBlock = jQuery("#block-webform-client-block-4", footer),
 		fields = jQuery('.webform-component--full-name,'
@@ -39,22 +39,34 @@ jQuery(document).ready(function(){
 	_fix_webform_description(wcf5);
 	
 	var menu = jQuery('nav.bottom'),
-		last = jQuery("li", menu).last(),
-		li = last.clone().addClass("last"),
-		li_2 =		last.clone();
+		last = jQuery("li", menu).last();
+		last_clone = last.clone();
+		jQuery("a", last_clone).removeClass("active").removeClass("active-trail");
+		
+		var li = last_clone.clone().removeClass("last"),
+			li_2 =		last_clone.clone();
 		
 		jQuery("a", li_2).text("about us").attr("href", "/about-us");
+		
 		last.after(li_2)
 		
 		jQuery("a", li).text("עברית").attr("href", "/אודות");
 		li.css({"float": "right", "margin" : "0 1em"});
-		last.after(li).removeClass("last");
+		last.after(li).addClass("last");
+		console.log(jQuery(li,li_2));
+		jQuery("li", menu).each(function(i, val){
+			console.log(jQuery("a", val).attr("href") );
+			console.log("location.pathname  --  "+location.pathname);
+			if(jQuery("a", val).attr("href") == location.pathname || jQuery("a", val).attr("href") == decodeURI(location.pathname) ){
+				jQuery("a", val).addClass("active").addClass("active-trail");
+			}
+		});
 	
 	//~ 
 	//~ 
 	jQuery('.views-row, .field-item', gallery).each(function(i,val){
-		//calc desired height one time ..
-		w = (i == 0) ? jQuery(val).width():w;
+
+		var w =  jQuery(val).width();
 		jQuery(val).height(w);
 	});
 	
@@ -69,6 +81,15 @@ jQuery(document).ready(function(){
 			.append(mailing);
 			
 	}
+	
+	
+	jQuery('.block-bean .moreInfo').on("click", function(ev){
+		var block = jQuery(ev.currentTarget).parents(".block-bean"),
+			more = jQuery(".field_more_info", block);
+		if(more.length){
+			window.open(more.attr("href"), "_blank");
+		}
+	})
 });
 
 function _fix_webform_description(context){

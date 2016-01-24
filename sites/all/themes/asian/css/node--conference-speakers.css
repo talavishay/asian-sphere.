@@ -1,0 +1,48 @@
+.node-conference-speakers.node-teaser div{
+  max-width: 100% !important;
+  overflow: hidden;
+}
+.speaker{
+	position : relative;
+	min-height : 450px;
+  line-height:18px;
+}
+.text.editable{
+  overflow: hidden;
+  text-align: center;
+}
+.node-conference-speakers .field-name-body{
+  text-align: justify;
+}
+.whenIcon,
+.readMore{
+	background-repeat: no-repeat;
+	background-position: left top ;
+	padding-left: 41px;
+/*   min-height: 25px; */
+}
+.speaker .more{
+display : block;
+  text-decoration: none;
+}
+.speaker .readMore{
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAABmJLR0QA/gD+AP7rGNSCAAAACW9GRnMAAAADAAAByABeX/MRAAAACXBIWXMAAABIAAAASABGyWs+AAAAiHpUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHjaXY4xDgMhDAR7v4InjI0x8B4gUroU+b/SHDkSN/ZaO9LI8/UeklJKSdUkNzfvPslrcc9kFK8WGqvmSmi1KLEi1w5fxmkbENDHdSsA5vxsyAA6NqPdd3cXmptcNvN+K+DtCPqfDyMOIwwo8gEwgTFdrI3bQgAAAAl2cEFnAAAAGQAAABgAsxB2AwAAAxBJREFUSMe1lU1oXFUUx///8zIT6ELrpoNRssksdFNRyBQhpUGFUhAlmIHee19gVlMxrSSrQl3k2V1XLmxNUBoCmfdG+nChmwhuUnWTNnQjNBJwEzXQKqUos3mTecfNTJkOb+oMJGf3zsf9nY973gWGlHK5nB82RoZxDoJA8vn81wB4ZJDd3d23AMxYa98+MoiILAL4keTCkUCMMSdV9fXR0dF3AbxhjDl56BDP8z4muby6uvovgBWSlw4VYowpqOoHrVZrGQCSJFkmOWuMKRwaREQukLxVr9f/BoA4jv8CEHueVx0kfuRZxkqlcrzZbI4BuEDybI/5c1XdcM59k8vl9tfW1h73O4fGmDc9z3snTdMTJF8CUAAwBuAEgH8APFDVn6IougQAvu8HtVotAADn3HUAU+2Y5wA8BLDfjvlTRB6q6g8jBwcHv4jIEsmSqn5E8jfP8/b39vYebG5uHvRmpapLAAIACMPwYkc/PT09Mj4+Xmi1WmOqOkHyC1XdSpLkMwJAuVz28vl8J6tzYRj+0a9055yGYchn2F8GsAHg5yRJLsZx3HrK2Vp7meSHaZqeq9frv3b0vu8H3ZWQ/LTz3WkdABhjXhGRDVVdiaLo2pOL0w2JougayasictsYMzXIzekCTInIbZJXuwF9xVr7vnPukXNuNqtdGbpZ59wj3/ffyzovc0+iKPoWwCLJKwMW8gnJhVqt9l2Wse+eqOrzALZ69d3z6JKttn+m9N14ESmRvNOr7x50l9wBUBoakqbpJMm73bpqtXrMOWer1eqxHve7ACaHglhrXyBZmJiYuN/pkrX2fKPR2AGw0Gg0dqy159F+IZMkuQ/gxUqlcnxgiIicArAdBEHq+/5p59y2iMyTnAnDsERyRkTmnXPbvu+fjuO4parbSZKcGqZdkwB+d87dVNVbJJeLxeKZWq12rz2Xe8Vi8QyAFVWNnXM3Se71a1nm7VLVEoCzAG7kcrlXs/6wQRCkAL6qVCpxs9lcAjAvIt8PDAHwWEReW19f38H/SDuBxbm5uS/TNM3cq/8A4G40kQ7MG+QAAAASdEVYdGxhYmVsAHJlYWRNb3JlSWNvbjPKfnIAAAAASUVORK5CYII=');
+line-height:35px !important;;
+display: inline-block;
+}
+.speaker .whenIcon{
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/gD+AP7rGNSCAAAACW9GRnMAAAAGAAABnwD7aKkxAAAACXBIWXMAAABIAAAASABGyWs+AAAAiHpUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHjaXY4xDgMhDAR7v4InjI0x8B4gUroU+b/SHDkSN/ZaO9LI8/UeklJKSdUkNzfvPslrcc9kFK8WGqvmSmi1KLEi1w5fxmkbENDHdSsA5vxsyAA6NqPdd3cXmptcNvN+K+DtCPqfDyMOIwwo8gEwgTFdrI3bQgAAAAl2cEFnAAAAGQAAABkAqgtHQgAAASpJREFUSMfdVTFOxDAQnEVXQMtXrgVRUCMk2t13QHlHx9Hxh6wrJAQVEgUV3yElXYbGiYKViw1HgsRKkZzRzI53vbIFSajqKYB7ACB5EUJ4RSZymkUqEJFjAHdxfQIga5LTiJk9kTxLRNdxV6ucQYHmUVSV7i4tYmbrPqOqqnXOYEyjqlwMaN5IPsT1eWEh4xpVZWlLfhKqyr0pDdqQqSvpypk6/yzt+jJdqnopIoe7JiX57u637X9ayaZpmrr9SC5JLhPsKscBsNlaCQCEEDqCmR0AgLt3mKrelHD6Oec/k7iLbtpIttjqu5xRk6F7LL2LSjh/3y4z6w6N5FHE9vvtKeGMmsQRBACIyMcAVsQZNfk3I1z/0gjXW03cfed7ayjmaRfJl4nflOdP1/oCuqTw5C8AAAAOdEVYdGxhYmVsAHdoZW5JY29u5DBIZAAAAABJRU5ErkJggg==');
+}
+.speaker .readMore,
+.speaker .when,
+.speaker .when{
+  font-size: .8em;
+  line-height: 1.2em;
+  text-align: left !important;
+  color: black;
+  
+}
+
+.speaker .department {
+  font-size: .8em;
+}
