@@ -118,6 +118,7 @@ line-height: 1.1em;
 	width: 4em;
 }
 #block-views-calendar-block-1 .view-content{
+	background: -webkit-linear-gradient( white 0%  ,#f4f4f4 100% );
 	background: linear-gradient( white 0%  ,#f4f4f4 100% );
 }
 #block-views-calendar-block-1 {
