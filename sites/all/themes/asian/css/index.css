@@ -216,6 +216,9 @@ ul#main-menu-links {
     width : 100%;
     background-color : black;
     line-height: 0em;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -233,10 +236,13 @@ ul#main-menu-links li {
     white-space: nowrap;
     overflow: hidden;
     display :inline-block;
-    width: 12.1%;
+    
     padding:  0px !important;;
     list-style: none !important;
     list-style: outside none none;
+}
+nav#main-menu.top ul#main-menu-links li {
+width: 12.1%;
 }
 .view-news .views-field-body{
 	text-align: justify;
@@ -848,12 +854,8 @@ font-weight: 400;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
+/*     width: 100%; */
     margin-bottom: 3em;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
 }
  .col-2 > *  {
      position: relative;
@@ -863,7 +865,7 @@ font-weight: 400;
     margin-right:3%;
 }
 .col-2 .right{
-    width:72%;
+    width:70%;
 }
 .col-2 .right .field{
     padding-bottom: 1em;
