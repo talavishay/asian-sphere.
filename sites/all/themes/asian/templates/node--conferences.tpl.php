@@ -1,5 +1,9 @@
 <?php
-$img = file_create_url($field_con_image[0]['uri']);
+if(isset($field_con_image[0])){
+	$img = file_create_url($field_con_image[0]['uri']);
+} else {
+$img ="";
+}
 
 
 drupal_add_css(drupal_get_path("theme", "asian_theme").'/css/node-confrences-full.css');
