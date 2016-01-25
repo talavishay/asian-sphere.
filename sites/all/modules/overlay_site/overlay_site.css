@@ -1,12 +1,12 @@
 #overlay_site{
       background: url("/sites/all/modules/overlay_site/homepagefinal.png") ;
-    background-size: cover !important;;
+/*     background-size: cover !important;; */
     min-height: 2000px;
     display: none;
     opacity: 0.765;
     pointer-events: none;
     position: absolute;
-    right: 0px;
+    left: 0px;
 /*      top: 10px; */
     width: 100%;
     z-index: 101;

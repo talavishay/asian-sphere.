@@ -134,7 +134,7 @@ jQuery(document).ready(function(){
 			menu_h = menu.outerHeight();
 			
 		jQuery('.field-name-field-slide-show-image', blockSlideshow).css({
-			"height" : height + menu_h + header_top_h + 50,
+			"height" : height + menu_h + header_top_h + 170,
 			 top : (header_top_h+menu_h) * -1
 			});		
 		jQuery( bbhss).height(height  +  50);
