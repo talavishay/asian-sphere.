@@ -198,7 +198,8 @@ function asian_theme_preprocess_page(&$variables) {
         
         $d = $variables['page']['content']['system_main']['nodes'];
         //~ dpm(array_shift($d));
-        $vm = array_shift($d)['#view_mode'];
+        $vm = array_shift($d);
+	$vm = $vm['#view_mode'];
         $variables['theme_hook_suggestions'][] = 'page__' . $nodetype.'__'.$vm;
     }
     
