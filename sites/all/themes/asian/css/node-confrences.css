@@ -306,7 +306,10 @@ color: white;
   width: 286px;
   height: 57px;
   z-index: 29;
-  background-color: #E01809 !important;
+  background-color: #DF1603 ;
+}
+#Layer-29:hover {
+  background-color: #FF4F00 ;
 }
 
 /* You named this layer  167  */
@@ -318,8 +321,11 @@ color: white;
   height: 111px;
   z-index: 30;
   background-color: black;
-}
 
+}
+#Layer-30:hover {
+ background-color: #DB0505;
+}
 /* You named this layer Go to Conference Site */
 #Layer-31 {
   position: absolute;
@@ -371,7 +377,9 @@ color: white;
   z-index: 35;
   background-color: black;
 }
-
+#Layer-35:hover {
+ background-color: #DB0505;
+}
 /* You named this layer 24-27-Dec 2015 */
 #Layer-36 {
   position: absolute;

@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
 		
 		
 		var h = jQuery(".field-name-field-map", content).height();
-		jQuery(".google-map-field", content).height(h-40);
+		jQuery(".google-map-field", content).height(h-35);
 		
 		var h = jQuery('<div class="field"><div class="field-label">Contact Us</div></div>');
 		jQuery('#contact').before(h);

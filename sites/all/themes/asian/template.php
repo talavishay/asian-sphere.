@@ -191,17 +191,20 @@ function asian_theme_webform_element($variables) {
   return $output;
 }
 function asian_theme_preprocess_page(&$variables) {
-    
+	if (isset($variables['node']) && $variables['node']->nid == "5"){
+		drupal_add_css(drupal_get_path("theme", "asian_theme"). '/css/register.css');
+	}
     if (isset($variables['node']->type) && $variables['node']->type == "conferences") {
         $nodetype = $variables['node']->type;
         $variables['theme_hook_suggestions'][] = 'page__' . $nodetype;
-        
-        $d = $variables['page']['content']['system_main']['nodes'];
+		if(isset($variables['page']['content']['system_main']['nodes'])){
+			$d = $variables['page']['content']['system_main']['nodes'];
         //~ dpm(array_shift($d));
-        $vm = array_shift($d);
-	$vm = $vm['#view_mode'];
-        $variables['theme_hook_suggestions'][] = 'page__' . $nodetype.'__'.$vm;
-    }
+			$vm = array_shift($d);
+			$vm = $vm['#view_mode'];
+			$variables['theme_hook_suggestions'][] = 'page__' . $nodetype.'__'.$vm;
+		}
+	}
     
 }
 function asian_theme_preprocess_node(&$variables, $hook) {

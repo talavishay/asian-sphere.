@@ -24,18 +24,27 @@ jQuery(document).ready(function(){
 		w = (i == 0) ? jQuery(val).width():w;
 		jQuery(val).height(w*.9);
 		
-		jQuery("a", val).tooltip({
+		var a = jQuery("a", val);
+		a.tooltip({
 			tooltipClass : "eventName",
-			position : {				my : 'bottom',				at : 'top',				of : val
-		}});
+			content : "Event",
+			position : {				
+				my : 'bottom+7',				
+				at : 'top',				
+				of : val, 
+				collision : 'none'
+		}})
+		setTimeout(function(){
+			//~ a.tooltip( "enable" );;
+			a.tooltip("open");
+		
+		},0);
 		jQuery("a", val).attr("href","");
 		var elm  = jQuery("a", val),
 			data = elm.data();
 		if(data){		
 			jQuery(elm).on("click", data, open_popup );
-			jQuery(elm).on("click", function(event){
-				//~ jQuery("a", val).tooltip('destroy');
-			} );
+			
 		};
 	});
 	calendar.after('<div class="sep"><div>');

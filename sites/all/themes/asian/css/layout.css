@@ -10,6 +10,10 @@ body{
 	vertical-align: top;
 display: inline-block;
  }
+.node-type-students #sidebar-first ,
+.page-students  #sidebar-first {
+	width: 15%;
+}
 header div.section{
 /*
     max-width: 1290px;
@@ -23,6 +27,9 @@ header div.section{
 }
 #content{
 		margin-bottom: .2em;
+}
+.not-front nav.bottom{
+		margin-top: 3em !important;;
 }
 .sidebar-first #content,
 .sidebar-first #sidebar-first {	
@@ -49,6 +56,11 @@ footer#footer .block > .content,
 	margin-left: 1em;
 	margin-right: 1em;
 }
+.not-front.no-sidebars #content .block > .content{
+	margin-left: unset;
+	margin-right: unset;
+}
+
 .region-content >  h2 {
 	margin-top : 0px;
 	margin-bottom: 0.7em;

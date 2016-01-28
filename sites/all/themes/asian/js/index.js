@@ -64,7 +64,7 @@ jQuery(document).ready(function(){
 	
 	//~ 
 	//~ 
-	jQuery('.views-row, .field-item', gallery).each(function(i,val){
+	jQuery('.views-row li', gallery).each(function(i,val){
 
 		var w =  jQuery(val).width();
 		jQuery(val).height(w);
