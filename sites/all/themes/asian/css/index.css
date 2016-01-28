@@ -66,6 +66,7 @@ overflow: scroll;
 #first-time{display:none}
 a{
     outline: unset;
+    color: inherit;
 }
 .region-content h2,
 .block h2 {
