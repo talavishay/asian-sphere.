@@ -216,7 +216,13 @@ ul#main-menu-links {
     background-color : black;
     padding: 0 1em;
     line-height: 0em;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 .opacity_box {
