@@ -109,7 +109,7 @@ line-height: 1.1em;
 	padding: 0px;
 }
 #block-views-news-block-1 tr {
-	width: 100%; padding-bottom: 3.2em; display: inline-block; position: relative;
+	width: 100%; padding-bottom: 2.7em; display: inline-block; position: relative;
 }
 #block-views-news-block-1,
 #block-views-news-block-1 tr:nth-child(3) {
@@ -117,7 +117,7 @@ line-height: 1.1em;
 	padding-bottom: unset;
 }
 #block-views-calendar-block-1 + .sep{
-	padding-top: 5px;
+	padding-top: 1.5em;
 }
 #block-views-news-block-1 {
 	padding: 0px 1% 0px 1.2%;
@@ -541,10 +541,15 @@ line-height: 1em;
 /* 
 testimonials 
 */
+.view-testimonials.view-display-id-block_2 .views-field-field-testimonial ,
 .view-testimonials p{
 	color: #858181;
-font-style: italic;
-	
+font-style: italic;	
+}
+.view-testimonials.view-display-id-block_2 .title {
+margin-top:.5em;
+color:black;
+font-style:normal;
 }
 .view-testimonials .title {
 	color : #5a5555;
@@ -591,25 +596,22 @@ font-style: italic;
 	margin-bottom: 0px;
 	padding-bottom: unset; 
 }
+.view-testimonials .views-field-field-testimonial,
 .view-testimonials .views-field-body {
-	width: 69%;
-  
+	width: 69%;  
 }
 .view-testimonials .title {
 	letter-spacing: -1px; font-size: 0.9em; font-weight: bold;
 		
 }
-.view-testimonials .views-row > img {
+.view-testimonials .views-row  img {
 	border-radius: 50%; 
 	width: 100px; 
 	height : 100px;
 	
 	box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
 }
-.view-testimonials .views-field-field-testimonials-image img {
-/* 	width: 100%;  */
-/* 	height: auto; */
-}
+
 footer #block-webform-client-block-64 p:last-child{
 	margin-bottom: 0px;
 }

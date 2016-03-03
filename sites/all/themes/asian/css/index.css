@@ -969,6 +969,9 @@ background-image: url('/modules/file/icons/image-x-generic.png');
 	margin: 0px !important;
 	padding: 0px !important;
 }
+.view-gallery img:hover {
+	opacity: .7;
+}
 .field-name-field-gallery-img .field-items,
 #content .view-gallery .views-row  > ul {
 	display: -webkit-box;
