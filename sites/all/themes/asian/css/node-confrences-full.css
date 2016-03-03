@@ -130,9 +130,15 @@ header .jumpMenu{
 }
 #content  #registration-form input.form-submit{
   background-image: unset;
-  padding:.3em ;
+  
   padding-top: 0px;
   border-radius: unset;
+}
+.readMore,
+#webform-client-form-4 .form-submit,
+#content  #registration-form input.form-submit{
+	    padding: .3em .65em !important;
+    font-size: 1.1em;
 }
 .form-item-anon-mail .description{
   display: none;
@@ -208,6 +214,9 @@ form#webform-client-form-4 textarea{
 }
 #block-webform-client-block-4 .content{
   padding: unset;
+}
+footer #block-webform-client-block-4{
+	display: none;
 }
 .google_map_field_display ,
 .field-name-field-map .field-items,

@@ -17,9 +17,13 @@
 .whenIcon,
 .readMore{
 	background-repeat: no-repeat;
-	background-position: left top ;
-	padding-left: 41px;
+	background-position: left center ;
+
 /*   min-height: 25px; */
+}
+.whenIcon,
+.more .readMore{
+	padding-left: 41px !important;
 }
 .speaker .more{
 display : block;

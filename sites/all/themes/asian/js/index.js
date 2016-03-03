@@ -27,16 +27,20 @@ jQuery(document).ready(function(){
 		//~ jQuery(this).hide("slow");
 	//~ });
 	
-	var headerTop = jQuery('header#top');
-	
+	var headerTop = jQuery('header#top'),
+		bbd = jQuery('#block-bean-default', headerTop);
 	if(jQuery('body').hasClass('not-front')){
 		jQuery("#logo", headerTop).after(jQuery("#block-block-2", headerTop));
 		
 		//~ jQuery(	".wrap", headerTop).after(jQuery("#block-bean-default", headerTop);
 	}
 	jQuery(	"#block-block-2, #logo", headerTop).wrapAll('<div class="wrap"/>');
+	
+	jQuery( headerTop).prepend(bbd);
+	
 	var wcf5 = jQuery('#webform-client-form-5');
 	_fix_webform_description(wcf5);
+	
 	
 	var menu = jQuery('nav.bottom'),
 		last = jQuery("li", menu).last();

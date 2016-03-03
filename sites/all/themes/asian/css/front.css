@@ -1,8 +1,13 @@
 body{
 	line-height: 16px;
 }
+/*
 nav#main-menu{
 	padding-top: 67px;
+}
+*/
+.menu-473 {
+	background: url("/sites/default/files/asianspher.png") -215px -66px no-repeat;
 }
 footer #block-webform-client-block-4 textarea,
 footer #block-webform-client-block-4 input.form-text,
@@ -59,6 +64,12 @@ top: 0px;
 	
 /* 	    margin-bottom: 3em; */
 }
+.front #content {
+	margin-top: 480px;
+	border-top-color: rgb(153, 153, 153); 
+	border-top-width: 1px; 
+	border-top-style: dashed;
+}
 /* 	text-shadow: 0px 0px 11px white !important; */
 
 #block-bean-homepage-slide-show .field-name-field-text-body p{
@@ -71,7 +82,9 @@ top: 0px;
 margin-top:unset;
 }
 div#block-bean-homepage-slide-show {
-	margin: auto 0px; width: 100%;
+	margin: auto 0px; 
+	width: 100%;
+	position: absolute;
 }
 
 div#block-bean-homepage-slide-show h2 {
@@ -182,7 +195,8 @@ width: 33.5%;
 
 }
 #block-views-our-futufirebrick-courses-block {
-	padding: 0px 4% 0px 0%; width: 66%; border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style: solid;
+	padding: 0px 4% 0px 0%; width: 66%;
+	border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style: solid;
 }
 #block-bean-traveling-courses {
 	width: 26%;
@@ -226,6 +240,7 @@ width: 33.5%;
 #block-views-calendar-block-1 td {
 	border: 1px solid rgb(173, 173, 173); text-align: center; font-size: 1.2em; vertical-align: inherit;
 	color: #444;
+	height: 40px;
 }
 #block-views-calendar-block-1 td:first-child {
 	border-left-color: black; border-left-width: 0px; border-left-style: solid;
@@ -276,8 +291,14 @@ width: 33.5%;
 }
 .pager li {
 	margin: 0px !important; padding: 0px !important; height: inherit;
-	cursor: pointer;
+	
+}
+.pager li a{
 	text-indent: -9999px;
+/* 	background: red !important;; */
+	width: 100%;
+	display: block;
+	height:100%;
 }
 ul.pager {
 	margin: 0px !important; padding: 0px !important; height: inherit;
@@ -291,8 +312,8 @@ ul.pager {
 .block-bean .field-name-field-body h5{
 	text-align: center;
 	font-size: 1em;
-	margin-bottom: .1em;
-	margin-top: .1em;
+	margin-bottom: .5em;
+	margin-top: .5em;
 }
 #block-bean-nuri .field-name-field-body ,
 #block-bean-nuri2 .field-name-field-body,
@@ -438,6 +459,7 @@ line-height: 1em;
 	background-color: rgb(194, 102, 35);
 }
 .view-our-futured-courses .views-row {
+	cursor:pointer;
 	padding: 0px 2% !important; margin-bottom: 2%;
 	display:-webkit-box;
 	display:-webkit-flex;
@@ -449,7 +471,7 @@ line-height: 1em;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
-	        align-items: center
+	        align-items: center;
 }
 .view-our-futured-courses .views-row:last-of-type {
 	margin-bottom: unset;
@@ -473,10 +495,13 @@ line-height: 1em;
 	border-left-width: 1px; 
 	border-left-style: dashed;
 }
-
+.view-our-futured-courses .views-field-view-node{
+	display:none;
+}
 #block-bean-traveling-courses {
 	vertical-align: top; 
 	display: inline-block;
+	    position: relative;
 }
 #block-views-our-futured-courses-block {
 	vertical-align: top; 
@@ -509,7 +534,9 @@ line-height: 1em;
 	position: relative;
 }
 #block-bean-traveling-courses .field-name-field-gallery-teaser {
-	width: 100%; bottom: 0px;
+    bottom: 0px;
+    position: absolute;
+	
 }
 /* 
 testimonials 

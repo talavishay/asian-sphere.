@@ -1,6 +1,7 @@
 body{
 	margin: 0px auto;
 	width:980px;
+position: relative;
 	/*max-width: 100%;*/
 }
 #sidebar-first {
@@ -35,11 +36,16 @@ header div.section{
 .sidebar-first #sidebar-first {	
 	display: inline-block;
 }
+/*
+.not-front nav#main-menu.top{
+	margin-top: 100px;
+}
+*/
 nav#main-menu.top{
 		margin-bottom: 2.5em;
 }
 .not-front #content{
-	width : 70%;
+	width : 80%;
 	display: inline-block;
 	margin: 0 auto;
 }

@@ -1,29 +1,19 @@
-var docElem = document.documentElement,
-	didScroll = false,
-	changeHeaderOn = 300,
-	w = 0;
-	
 jQuery(document).ready(function(){
-	var body = jQuery("body");
-	
-		
-	var content = jQuery("#content", body),
-		news = jQuery("#block-views-news-block-1", content),
-		calendar = jQuery('#block-views-calendar-block-1', content),
-		staff = jQuery('#block-views-stuff-view-block', content),
-		blockSlideshow = jQuery('#block-bean-homepage-slide-show', body),
-		gallery = jQuery('.view-gallery', content);
+	var	content 		= jQuery("#content"),
+		news 			= jQuery("#block-views-news-block-1", content),
+		calendar		= jQuery('#block-views-calendar-block-1', content),
+		staff 			= jQuery('#block-views-stuff-view-block', content),
+		travel 			= jQuery('#block-bean-traveling-courses', content),
+		blockSlideShow 	= jQuery('#block-bean-homepage-slide-show'),
+		courses			= jQuery('#block-views-our-futured-courses-block', content),
+		gallery 		= jQuery('.view-gallery', content),
+		top		 		= jQuery('header#top');
 	
 	_fix_slideshow('.field-slideshow-1');
-	
 	
 	//views-calendar block
 	
 	jQuery('td', calendar).each(function(i,val){
-		//calc desired height one time ..
-		w = (i == 0) ? jQuery(val).width():w;
-		jQuery(val).height(w*.9);
-		
 		var a = jQuery("a", val);
 		a.tooltip({
 			tooltipClass : "eventName",
@@ -33,18 +23,13 @@ jQuery(document).ready(function(){
 				at : 'top',				
 				of : val, 
 				collision : 'none'
-		}})
-		setTimeout(function(){
-			//~ a.tooltip( "enable" );;
-			a.tooltip("open");
-		
-		},0);
+		}});
+		setTimeout(function(){ a.tooltip("open") },0);
 		jQuery("a", val).attr("href","");
 		var elm  = jQuery("a", val),
 			data = elm.data();
 		if(data){		
 			jQuery(elm).on("click", data, open_popup );
-			
 		};
 	});
 	calendar.after('<div class="sep"><div>');
@@ -56,10 +41,9 @@ jQuery(document).ready(function(){
 		ts= 'go to full staff list',
 		cs='go to full courses list',
 		position = {				my : 'bottom',				at : 'top'};
-	//~ jQuery('#block-views-stuff-view-block').after(_a.clone().text(ts).attr("title",ts).tooltip({position:position}) );
-	//~ jQuery('#block-bean-traveling-courses').after(_a.clone().text(cs).attr("title",cs).tooltip({position:position}) );
-	jQuery('#block-views-stuff-view-block').after(_a.clone().text(ts).attr({"title":ts, "href" : "/staff"}) );
-	jQuery('#block-bean-traveling-courses').after(_a.clone().text(cs).attr({"title":cs, "href": "/Curriculum"}) );
+	
+	staff.after(_a.clone().text(ts).attr({"title":ts, "href" : "/staff"}) );
+	travel.after(_a.clone().text(cs).attr({"title":cs, "href": "/Curriculum"}) );
 	
 	jQuery('.views-field-field-profile-image', staff).each(function(i,val){
 		//calc desired height one time ..
@@ -102,89 +86,67 @@ jQuery(document).ready(function(){
 		//~ bvof_h2_h = jQuery("h2", bvof).outerHeight(),
 		//~ fnfg_h = 	jQuery('.field-name-field-gallery-teaser', bbtc).outerHeight();
 		//~ 
-	var bvof = jQuery('#block-views-our-futured-courses-block');
+	//~ var bvof = courses ;
 	
-	bvof.before(jQuery("h2", bvof));
 	
-		var	bvof = jQuery('#block-views-our-futured-courses-block');
-			bbtc = jQuery('#block-bean-traveling-courses'),
-			bvof_h = bvof.outerHeight(true),
-			fnfg_img = 	jQuery('.field-name-field-gallery-img img', bbtc),
-			bbtch2_h = jQuery('h2', bbtc).outerHeight(true),
-			fnfg_item = 	jQuery('.field-name-field-gallery-img .field-item', bbtc),
-			fnfg_item_h = 	jQuery('.field-name-field-gallery-img', bbtc).outerHeight(true) ,
-			
-			fnfg_img_w = fnfg_item.first().outerWidth();
-	
-	fnfg_img.each(function(i, val){
-		jQuery(val).height(fnfg_img_w);
-	});
-		
-		
-	//~ jQuery(".field-name-field-body", bbtc).first().height(bvof_h -fnfg_item_h  );
-	//~ bbtc.css({"min-height": bvof_h - bvof_h2_h });
-	
+		//~ var	bvof = jQuery('#block-views-our-futured-courses-block');
+			//~ bbtc = jQuery('#block-bean-traveling-courses'),
+			//~ bvof_h = bvof.outerHeight(true),
+			//~ fnfg_img = 	jQuery('.field-name-field-gallery-img img', bbtc),
+			//~ bbtch2_h = jQuery('h2', bbtc).outerHeight(true),
+			//~ fnfg_item = 	jQuery('.field-name-field-gallery-img .field-item', bbtc),
+			//~ fnfg_item_h = 	jQuery('.field-name-field-gallery-img', bbtc).outerHeight(true) ,
+			//~ 
+			//~ fnfg_img_w = fnfg_item.first().outerWidth();
 	//~ 
-	//~ #block-bean-nuri img,
-//~ #block-bean-nuri2 img,
-//~ #block-bean-nuri3 img, 
-//~ #block-bean-nuri4ac img{
-//~ var images = jQuery('#block-bean-nuri img,#block-bean-nuri2 img,#block-bean-nuri3 img, #block-bean-nuri4ac img'),
-	//~ images_h = images.first().outerWidth();
-	//~ images.each(function(i, val){
-			//~ jQuery(val).height(images_h);
+	//~ fnfg_img.each(function(i, val){
+		//~ jQuery(val).height(fnfg_img_w);
 	//~ });
-		var bbhss = blockSlideshow,
-			body = jQuery('.field-name-field-text-body' , bbhss),
-			height = body.outerHeight(),
-			header_top = jQuery('header#headerRegion'),
-			header_top_h = header_top.outerHeight(),
-			menu = jQuery('nav#main-menu'),
-			menu_h = menu.outerHeight();
-			
-	jQuery('.field-name-field-slide-show-image', blockSlideshow).css({
-			"height" : height + menu_h +30 ,//body position :absolute, top:30...
-			 top : (menu_h) * -1
-			});		
-		jQuery( bbhss).height(height+30	 );
+		
+	courses.before(jQuery("h2", courses));
 	
+	jQuery(travel)
+		.height(jQuery(courses).height())
+		.append(jQuery('.field-name-field-gallery-teaser', travel));
+		
+		
+	jQuery(".views-row", courses).on("click", function(ev){
+		ev.preventDefault();
+		
+		var h =jQuery(".views-field-view-node a", ev.currentTarget).attr("href");
+		document.location.replace(h);
+		
+		return false;
+	});
 	
-	
-	
-	
-	
-	var nuriBlocks = jQuery('#block-bean-nuri,#block-bean-nuri2,#block-bean-nuri3, #block-bean-nuri4ac');
+	var nuriBlocks = jQuery('#block-bean-nuri,#block-bean-nuri2,#block-bean-nuri3, #block-bean-nuri4ac', content);
 	nuriBlocks.each(function(i, val){
 		var m = jQuery('<div class="moreInfo" />');
-		jQuery(".content", val).first().after(m);
+		jQuery(".content", val)
+			.first().after(m);
 	});
 	var c = jQuery('<div class="cols_4"/>').append(nuriBlocks);
-	jQuery('#block-views-stuff-view-block').before(c);
+	staff.before(c);
 	
 	//~ jQuery('.view-testimonials .views-row > img').each(function(i, val){
 		//~ var w = jQuery(val).width();
 		//~ jQuery(val).height(w);
 	//~ });
+	
+	var 	bodyFieldHeight = jQuery('.field-name-field-text-body' , blockSlideShow).outerHeight(),
+			//~ header_top_h = jQuery('header#headerRegion').outerHeight(),
+			menu_h = jQuery('nav#main-menu').outerHeight(),
+			t = top.outerHeight();
+			
+	jQuery('.field-name-field-slide-show-image', blockSlideShow)
+		.css({
+			"height" : bodyFieldHeight + menu_h +97 ,//body-css :  position :absolute, top:30...
+			"top" : (menu_h + 67) * -1
+		});		
+	jQuery( blockSlideShow ).height( bodyFieldHeight + 97 );
+	
 });
 
-
-
-
-//~ window.addEventListener( 'scroll', function( event ) {
-	//~ if( !didScroll ) {
-		//~ didScroll = true;
-		//~ setTimeout( function scrollPage() {
-			//~ var sy = scrollY();
-			//~ if ( sy >= 400 ) {
-				//~ jQuery("body").addClass(  'scrolled' );
-			//~ }
-			//~ else {
-				//~ jQuery("body").removeClass(  'scrolled' );
-			//~ }
-			//~ didScroll = false;
-		//~ }, 250 );
-	//~ }
-//~ }, false );
 
 function open_popup(event){
 	event.preventDefault();
@@ -203,7 +165,6 @@ function open_popup(event){
 	});
 	return false;
 }
-	
 function popup_template(data){
 	var d = jQuery(data.date).text().split('-'),
 		day = d[0].trim(),
@@ -246,8 +207,32 @@ function _fix_slideshow(_class){
 	}
 
 };
-	//~ jQuery('.view-gallery .view-content').isotope({
-		  //~ itemSelector: '.views-row',
-		  //~ percentPosition: true 
-		//~ });
-	// front -teaser view -- created field	// split text and wrap
+//~ jQuery('.view-gallery .view-content').isotope({
+	  //~ itemSelector: '.views-row',
+	  //~ percentPosition: true 
+	//~ });
+// front -teaser view -- created field	// split text and wrap
+//~ var docElem = document.documentElement,
+	//~ didScroll = false,
+	//~ changeHeaderOn = 300,
+	//~ w = 0;
+
+
+
+
+
+//~ window.addEventListener( 'scroll', function( event ) {
+	//~ if( !didScroll ) {
+		//~ didScroll = true;
+		//~ setTimeout( function scrollPage() {
+			//~ var sy = scrollY();
+			//~ if ( sy >= 400 ) {
+				//~ jQuery("body").addClass(  'scrolled' );
+			//~ }
+			//~ else {
+				//~ jQuery("body").removeClass(  'scrolled' );
+			//~ }
+			//~ didScroll = false;
+		//~ }, 250 );
+	//~ }
+//~ }, false );
