@@ -16,7 +16,6 @@ jQuery(document).ready(function(){
 				t = l.text();
 			jQuery("input", val).attr("placeholder", t);
 			l.remove();
-			console.log(t);
 	});	
 	
 	var joinBlock = jQuery('#block-webform-client-block-64', footer);
@@ -57,10 +56,7 @@ jQuery(document).ready(function(){
 		jQuery("a", li).text("עברית").attr("href", "/אודות");
 		li.css({"float": "right", "margin" : "0 1em"});
 		last.after(li).addClass("last");
-		console.log(jQuery(li,li_2));
 		jQuery("li", menu).each(function(i, val){
-			console.log(jQuery("a", val).attr("href") );
-			console.log("location.pathname  --  "+location.pathname);
 			if(jQuery("a", val).attr("href") == location.pathname || jQuery("a", val).attr("href") == decodeURI(location.pathname) ){
 				jQuery("a", val).addClass("active").addClass("active-trail");
 			}

@@ -83,5 +83,9 @@
 <?php if ($page['footer_under_menu']): ?>
 	<footer id="bottom" >
 		<?php print render($page['footer_under_menu']); ?>
+		<?php 
+	$date = preg_replace('/\//i', '.', variable_get("last_modified", date('d/m/Y')));
+	print '<span id="last_mod" style="margin-left:1em">  Last Modified '.$date.'</span>';
+	?>	    
 	</footer> <!-- /#footer -->
 <?php endif; ?>

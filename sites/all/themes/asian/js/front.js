@@ -1,3 +1,25 @@
+var _cal = function _cal(calendar){
+	jQuery('td', calendar).each(function(i,val){
+		var a = jQuery("a", val);
+		//~ a.tooltip({
+			//~ tooltipClass : "eventName",
+			//~ content : "Event",
+			//~ position : {				
+				//~ my : 'bottom+7',				
+				//~ at : 'top',				
+				//~ of : val, 
+				//~ collision : 'none'
+		//~ }});
+		setTimeout(function(){ a.tooltip("open") },0);
+		jQuery("a", val).attr("href","");
+		var elm  = jQuery("a", val),
+			data = elm.data();
+		if(data){		
+			jQuery(elm).on("click", data, open_popup );
+		};
+	});
+};
+
 jQuery(document).ready(function(){
 	var	content 		= jQuery("#content"),
 		news 			= jQuery("#block-views-news-block-1", content),
@@ -10,28 +32,18 @@ jQuery(document).ready(function(){
 		top		 		= jQuery('header#top');
 	
 	_fix_slideshow('.field-slideshow-1');
-	
+(function($){
+Drupal.behaviors.asian = {
+  attach: function(context, settings) {
+	if(context.hasClass("view-calendar")){
+		_cal(context);
+	}
+  }
+}
+})(jQuery);	
 	//views-calendar block
+	_cal(calendar);
 	
-	jQuery('td', calendar).each(function(i,val){
-		var a = jQuery("a", val);
-		a.tooltip({
-			tooltipClass : "eventName",
-			content : "Event",
-			position : {				
-				my : 'bottom+7',				
-				at : 'top',				
-				of : val, 
-				collision : 'none'
-		}});
-		setTimeout(function(){ a.tooltip("open") },0);
-		jQuery("a", val).attr("href","");
-		var elm  = jQuery("a", val),
-			data = elm.data();
-		if(data){		
-			jQuery(elm).on("click", data, open_popup );
-		};
-	});
 	calendar.after('<div class="sep"><div>');
 	gallery.parents(".block").after('<div class="sep"><div>');
 	gallery.parents(".block").before('<div class="sep"><div>');

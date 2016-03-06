@@ -17,7 +17,7 @@ print render($title_suffix);
 <div class="speakerImage"  >
 	<img src="<?php print $img?>" width="190" height="186" alt="image" class="pngimg" /></div>  
 
-<div class="name text editable"  ><?php print $title;?></div>
+<div class="name text editable"  ><a href="<?php print $node_url?>"><?php print $title;?></a></div>
 <div  class="department text editable"  ><?php print $field_staff_department;?></div>
 <div  class="body text editable"  ><?php print render($content["body"]);?></div>
 
